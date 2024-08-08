@@ -15,8 +15,8 @@ Today I Learn
 [인터페이스와 추상클래스](https://github.com/ohsuha/TIL/blob/master/java/%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%99%80%20%EC%B6%94%EC%83%81%ED%81%B4%EB%9E%98%EC%8A%A4.md)<br>
 [pakage](https://github.com/ohsuha/TIL/blob/master/java/pakage.md)<br>
 [import](https://github.com/ohsuha/TIL/blob/master/java/import.md)<br>
-[garbage collector]()<br>
-
+[garbage collector](https://github.com/ohsuha/TIL/blob/master/java/garbage%20collector.md)<br>
+[generic](https://github.com/ohsuha/TIL/blob/master/java/generic.md)<br>
 
 ### 클래스
 [Object.class](https://github.com/ohsuha/TIL/blob/master/java/Object.class.md)<br>
