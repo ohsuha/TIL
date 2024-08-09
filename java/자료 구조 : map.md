@@ -5,6 +5,15 @@
 - 가장 일반적으로 사용되는 Map 구현체로, 해시 테이블을 사용하여 데이터를 저장
 - 삽입과 검색이 평균적으로 빠르다. TreeMap 보다 HashMap이 검색 성능이 좋다.
 - 요소의 순서를 보장하지 않는다.
+- 스레드에 안전한 맵을 만들려면 `Collections.synchronizedMap(new HashMap())` 을 사용해야한다.
+- 기본 생성자로 생성할 때 기본 16개의 기본 영역을 만든다. 데이터의 갯수가 많을 경우 초기 크기를 지정하는 것이 권장된다.
+- 키가 되는 객체를 직접 작성할 때는 hashCode(), equals() 를 꼭 구현해야한다.
+- 존재하지 않는 키를 get()할 경우 null 이 리턴된다.
+### 주요 메소드
+- keyset() : key를 모두 set 타입으로 리턴
+- values() : 값을 모두 collection 타입으로 리턴
+- entrySet() : 키와 값을 모두 set 타입으로 리턴
+- containKey(), containValue() : boolean 타입의 값 리턴
 
 ## LinkedHashMap
 - 입력된 순서를 유지하는 Map
