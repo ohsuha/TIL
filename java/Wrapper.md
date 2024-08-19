@@ -86,3 +86,17 @@ JDK1.5 이전에서는 래퍼클래스로 기본형을 객체로 만들어서 �
 그러나 이제는 기본형과 참조형간의 덧셈이 가능하다. 컴파일러가 자동으로 변환하는 코드를 넣어주기 때문이다.<br>
 컴파일러가 int 타입으로 변환해주는 intValue() 와 같은 메소드를 추가해준다.<br>
 이처럼 기본형 값을 래퍼클래스의 객체로 자동으로 변환해주는것을 언박싱, 기본형 값을 래퍼클래스의 객체로 자동 변환해주는 것을 오토박싱이라고 한다.
+### 관련 메소드
+- valueOf(int i): int를 Integer로 변환합니다.
+- valueOf(double d): double을 Double로 변환합니다.
+- intValue(): Integer 객체에서 int 값을 추출합니다.
+- doubleValue(): Double 객체에서 double 값을 추출합니다.
+
+## Wrapper 클래스의 생성자와 최적화 기능
+Java에서 일부 Wrapper 클래스(Integer, Long, Short, Byte, Character)는 특정 범위 내의 값을 위한 캐싱(Caching) 최적화 기능을 제공한다.<br>
+Java 9 이후로 대부분의 Wrapper 클래스 생성자는 deprecated 상태가 되었으며, 대신 valueOf() 메소드를 사용하는 것이 권장됨
+### 캐싱 최적화
+자주 사용되는 작은 범위의 값(-128에서 127 사이의 Integer, Long, Short, Byte 및 0에서 127 사이의 Character 등)에 대해서는 새로운 객체를 생성하지 않고, 미리 생성된 객체를 반환한다.
+이를 통해 메모리 사용량을 줄이고 성능을 향상시킬 수 있다.
+예를 들어, Integer 클래스의 valueOf(int i) 메소드를 통해 Integer 객체를 생성할 때, i가 -128에서 127 사이에 있으면 새로운 객체를 생성하지 않고 기존에 캐싱된 객체를 반환한다.
+<BR><BR>
