@@ -38,6 +38,8 @@ public abstract class Enum<E extends Enum<E>>
     ...
 }
 ```
+
+### method
 - `ordinal()` 은 모든 열거형의 조상인 Enum 클래스에 정의된 것으로, 열거형 상수가 정의된 순서(0에서 시작)을 정수로 반환한다.
 - `static E values()` 는 열거형의 모든 상수를 배열에 담아 반환한다. 컴파일러가 자동적으로 추가해주는 메서드이다.
 - `static E valueOf(String name)` 은 열거형 상수의 이름으로 문자열 상수에 대한 참조르 얻을 수 있게 해준다.
