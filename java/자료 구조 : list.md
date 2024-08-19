@@ -12,7 +12,7 @@
   - JDK7부터는 타입 없이 <> 만 사용해도 가능하다.
 - 리스트 복제시에는 swallow copy 와 deep copy 가 있다.
   - swallow copy : 참조를 복사하여 원본과 복사본이 동일한 객체를 가리킵니다.
-    - ```commandline
+    - ```java
             ArrayList<String> originalList = new ArrayList();
             list.add("A");
             list.add("B");
@@ -30,7 +30,7 @@
             System.out.println(originalList.get(0) == shallowCopy2.get(0)); // true
       ```
   - deep copy : 객체 자체를 복사하여 원본과 복사본이 서로 다른 객체를 가리킵니다.
-    - ```commandline
+    - ```java
         ArrayList<Item> deepCopy = new ArrayList<>();
         for (Item item : originalList) {
         try {

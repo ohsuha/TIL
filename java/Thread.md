@@ -12,7 +12,7 @@
 ![img](https://joont92.github.io/temp/thread-states.png)
 
 ## Runnable 인터페이스 구현을 통한 스레드 생성
-```commandline
+```java
 public class MyRunnable implements Runnable {
     @Override
     public void run() {
@@ -35,7 +35,7 @@ public class MyRunnable implements Runnable {
 ```
 
 ## Thread 클래스 상속을 통한 스레드 생성
-```commandline
+```java
 public class MyThread extends Thread {
     @Override
     public void run() {
@@ -61,7 +61,7 @@ public class MyThread extends Thread {
 
 ## 데몬스레드
 데몬 스레드는 백그라운드에서 실행되며, 프로그램의 주요 작업과는 별도로 실행되는 스레드. 프로그램이 종료되면 자동으로 종료된다.
-```commandline
+```java
 public class DaemonThreadExample {
     public static void main(String[] args) {
         Thread daemonThread = new Thread(() -> {
@@ -100,7 +100,7 @@ public class DaemonThreadExample {
 
 ### 메소드에 적용
 메서드 전체를 동기화하여 해당 메서드를 동시에 하나의 스레드만 접근
-```commandline
+```java
 public class SynchronizedExample {
     private int counter = 0;
 
@@ -144,7 +144,7 @@ public class SynchronizedExample {
 
 ### synchronized 블록 사용
 동시성 이슈가 발생할 수 있는 부분만 Synchronized 처리를 해준다.
-```commandline
+```java
 public class SynchronizedBlockExample {
     private int counter = 0;
 

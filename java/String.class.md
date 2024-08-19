@@ -1,6 +1,6 @@
 # String.class
 
-```commandline
+```java
 public final class String implements java.io.Serializable, Comparable<String>,
                                      CharSequence, Constable, ConstantDesc {}
 ```

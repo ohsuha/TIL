@@ -46,7 +46,7 @@ public static <T> void addToList(List<T> list, T... elements) {
 - 이 메서드는 가변인자를 안전하게 처리하며, 내부에서 어떤 형변환도 발생하지 않기 때문에 @SafeVarargs를 사용해서 경고를 억제한다.
 - 
 ## 어노테이션 선언을 위한 메타 어노테이션
-```commandline
+```java
 @Documented
 @Inherited
 @Target({ElementType.Type})

@@ -13,7 +13,7 @@ public final void MethodName() {}
 overriding이 불가능해진다.
 
 ## variable
-```commandline
+```java
 private fianl Stirng EVENT_TOPIG = "event.topic";
 public final int = 123;
 ```

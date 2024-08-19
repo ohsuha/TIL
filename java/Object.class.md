@@ -22,7 +22,7 @@ Object 클래스에 있는 메소드들을 통해 클래스의 기본적인 행�
  - `null` 과의 비교 : `null` 이 아닌 x라는 객체의 `x.equals(null)` 결과는 항상 `false` 여야한다.
 
 ``String.class > equals overriding`` 예시
-```commandline
+```java
 public boolean equals(Object anObject) {
     if (this == anObject) {
         return true;
@@ -50,7 +50,7 @@ public static boolean equals(byte[] value, byte[] other) {
 어떤 두개의 객체가 서로 동일하다면 hashCode() 값은 무조건 동일해야한다.<br>
 따라서 equals() 메소드를 override 한다면 hashCode()도 override 해서 동일한 결과가 나오도록 만들어야만 한다.<br>
 
-hashCode() overriding 할 때에의 조건
+#### hashCode() overriding 할 때에의 조건
 - 자바 애플리케이션이 수행되는 동안에 어떤 객체에 대해서 이 메소드가 호출될 떄에는 항상 동일한 int 값을 리턴해 주어야 한다. 하지만 자바를 실행할 떄마다 같은 값이어야 할 필요는 없다.
 - 어떤 두개의 객체에 대하여 equals()메소드를 사용하여 비교한 결과가 true 일 경우에, 두 객체의 hashCode() 메소드를 호출하면 동일한 int 값을 리턴해야한다.
 - 두 객체를 equals() 메소드를 사용하여 비교한 결과 false 를 리턴했다고 해서, hashCode() 메소드를 호출한 int 값이 무조건 달라야할 필요는 없다. 하지만 이 경우 서로 다른 int 값을 제공하면 hashtable의 성능을 향상 시키는 데 도움이 된다.
