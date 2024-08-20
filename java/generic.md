@@ -1,5 +1,6 @@
 # generic
-> test code : 
+> test code : https://github.com/ohsuha/code_scratch/blob/master/code_scratch/src/test/java/GenericsTest.java
+> https://github.com/ohsuha/code_scratch/tree/master/code_scratch/src/main/java/test/generics
 
 제네릭은 형변환에 생길 수 있는 문제점을 컴파일 할 때 정정할 수 있도록 만들어졌다.
 
