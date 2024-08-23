@@ -2,9 +2,7 @@
 
 > test code : https://github.com/ohsuha/code_scratch/blob/master/code_scratch/src/test/java/ReflectionTest.java
 
-**Reflection**은 Java에서 동적으로 클래스, 메소드, 필드, 생성자 등에 접근하고 조작할 수 있게 해주는 기능입니다.
-주로 런타임에 객체의 메타데이터(예: 클래스의 구조, 메소드, 필드 등)에 접근하고,
-이를 이용해 동적으로 인스턴스를 생성하거나 메소드를 호출하는 데 사용됩니다.
+**Reflection**은 Java에서 런타임 시점에서 클래스의 메타데이터를 분석하고, 객체의 속성이나 메소드를 동적으로 접근할 수 있는 기능을 제공
 
 #### 주요 기능:
 1. **클래스 정보 획득**: `Class<?>` 객체를 사용해 클래스의 이름, 부모 클래스, 구현된 인터페이스 등을 조회할 수 있습니다.
