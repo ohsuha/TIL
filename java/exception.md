@@ -128,7 +128,7 @@ void startInstall() throws SpaceException {
         throw new RuntimeExcpetion(new MemoryExcpetion("메모리가 부족합니다."));
 }
 ```
-- checked 예외가 발생해도 예외를 처리할 수 없는 사오항이 발생하기 시작하는데 이럴때 checekd 예외를 unchecked 예외로 바꾸면 예외처리가 선택적이 되므로 억지로 예외처리를 하지 않아도 된다.
+- checked 예외가 발생해도 예외를 처리할 수 없는 상황이 발생하기 시작하는데 이럴때 checekd 예외를 unchecked 예외로 바꾸면 예외처리가 선택적이 되므로 억지로 예외처리를 하지 않아도 된다.
 - `initCause()` 대신 `RuntimeException(Throwable cause)` 생성자를 사용해도 된다.
 
 ## 자바 예외 전략
@@ -142,3 +142,4 @@ void startInstall() throws SpaceException {
   - 특정 메소드에서 checked exception을 throw하고 상위 메소드에서 그 exception을 catch 한다면, 모든 중간단계 메소드에 exception을 throws해야한다.
   - 상위 메소드에서 하위 레벨 메소드의 디테일에 대해 알아야하기 때문에 OCP 원칙 위배이다.
 - 예외 로깅 전략을 사용해 오류의 원인을 명확히 가고 추적을 용이하게 해야한다.
+- 최대한 자바에서 제공하는 예외를 사용하자
