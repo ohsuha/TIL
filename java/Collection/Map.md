@@ -34,3 +34,6 @@
 | `V setValue(V value)` | 이 Map.Entry에서 대응되는 값을 지정된 값으로 대체. 대체된 이전의 값을 반환. |
 | `boolean equals(Object o)` | 지정된 객체가 이 Map.Entry와 같은지 비교. |
 | `int hashCode()` | 이 Map.Entry의 해시코드를 반환. |
+
+### Hash
+
