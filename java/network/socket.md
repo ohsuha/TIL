@@ -44,3 +44,4 @@ UDP는 연결지향적인 프로토콜이 아니기 때문에 `ServerSocket` 이
 UDP통신에서 사용하는 소켓은 DatagramSocket 이며 데이터를 `DatagramPacket` 에 담아서 전송한다.
 
 `DatagramPacket` 은 헤더와 데이터로 구성되어 있으며, 헤더에는 `DatagramPacket` 을 수신할 호스트의 정보가 저장되어있다.
+
