@@ -35,5 +35,3 @@
 | `boolean equals(Object o)` | 지정된 객체가 이 Map.Entry와 같은지 비교. |
 | `int hashCode()` | 이 Map.Entry의 해시코드를 반환. |
 
-### Hash
-
