@@ -9,7 +9,12 @@ public class HashSet<E>
 	}
 }
 ```
-- backed by a hash table (actually a HashMap instance).
+- 해시테이블을 이용해서 구현되었다.
+  - 데이터의 크기가 얼마나 크든 상관없이 키를 통해서 상수시간에 빠르게 데이터에 접근이 가능한 특징을 가지고 있다. : hashSet 의 조회가 빠른 이유
+- 내부적으로 맵을 쓰고 있다. key 에 값을 넣고 value 에 더미데이터를 넣고 있다.
+  - 맵과 동일하게  separate chaining 방식으로 해시충돌을 해결
+  - set의 조회는 key를 조회하는 것과 동일하다.
+- default capa : 16 인데 3/4 이상 데이터 존재시 2배로 리사이즈한다. 축소되는 경우는 없다. 2의 n승으로 잡힌다.
 - this implementation is not synchronized, the set should be "wrapped" using the Collections. synchronizedSet method. This is best done at creation time, to prevent accidental unsynchronized access to the set
 - 저장 순서를 유지하지 않는다. 
 - add()를 통해서 데이터를 추가할때 중복이 발생하면 false 를 리턴한다.

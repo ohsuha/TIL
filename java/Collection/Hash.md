@@ -1,4 +1,5 @@
-# Hash
+# Hash function
+임의의 데이터를 정수로 변환하는 함수
 임의의 크기를 가진 타입의 데이터를 고정된 크기를 가지는 int 데이터로 변환하는 hash function 함수를 이용해 해시값을 만든다.
 hash function을 통해 만들어진 정수값을 hash 라고 한다. hash 는 유한하며 범위가 좁다.
 
